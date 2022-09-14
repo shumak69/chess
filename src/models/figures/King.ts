@@ -9,4 +9,8 @@ export class King extends Figure {
     this.logo = color === Colors.BLACK ? blackLogo : whiteLogo;
     this.name = FigureNames.KING;
   }
+  сanMove(target: Cell): boolean {
+    if (!super.canMove(target)) return false;
+    return true;
+  }
 }

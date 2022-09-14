@@ -12,15 +12,15 @@
 }
 
 .board {
-  width: calc(64px * 8);
-  height: calc(64px * 8);
+  width: calc(74px * 8);
+  height: calc(74px * 8);
   display: flex;
   flex-wrap: wrap;
 }
 
 .cell {
-  width: 64px;
-  height: 64px;
+  width: 74px;
+  height: 74px;
   display: flex;
   justify-content: center;
   align-items: center;

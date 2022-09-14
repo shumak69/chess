@@ -23,7 +23,9 @@ export abstract class Figure {
   }
 
   canMove(target: Cell): boolean {
-    return false;
+    if (target.figure?.color === this.color) return false;
+    if (target.figure?.name === FigureNames.KING) return false;
+    return true;
   }
   moveFigure(target: Cell) {}
 }
