@@ -49,3 +49,47 @@
   border-radius: 50%;
   background-color: green;
 }
+
+.lost {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.lost-wrapper h3 {
+  text-align: center;
+}
+
+.lost-wrapper {
+  height: calc(40vh - 60px);
+  width: calc(15vw - 60px);
+  padding: 30px;
+  margin-left: 50px;
+  background-color: lightpink;
+  border-radius: 20%;
+}
+
+.timer {
+  background-color: lightpink;
+  margin-right: 20px;
+  padding: 30px;
+  border-radius: 20%;
+}
+
+.timer button {
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: 4px rgb(0, 255, 0);
+  border-style: groove;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transform: translateY(0);
+  transition: all .5s;
+}
+
+.timer button:hover {
+  transform: translateY(-15px);
+}

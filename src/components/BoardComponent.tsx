@@ -18,7 +18,6 @@ function BoardComponent({ board, setBoard, swapPlayer, currentPlayer }: BoardPro
       swapPlayer();
       setSelectedCell(null);
     } else if (selectedCell === cell) {
-      console.log(selectedCell, cell);
       setSelectedCell(null);
     } else if (cell.figure) {
       if (cell.figure.color === currentPlayer?.color) {
@@ -44,7 +43,7 @@ function BoardComponent({ board, setBoard, swapPlayer, currentPlayer }: BoardPro
   return (
     <div>
       <h3 style={{ textAlign: "center", marginBottom: 20, fontSize: 20 }}>
-        Текущий игрок {currentPlayer?.color}
+        Current player is {currentPlayer?.color}
       </h3>
       <div className="board">
         {board.cells.map((row, index) => (
